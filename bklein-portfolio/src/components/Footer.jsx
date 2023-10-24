@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterData } from "../assets/FooterData";
+import { FooterData } from "./FooterData";
 
 export default function Footer() {
     return (

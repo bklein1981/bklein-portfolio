@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MenuData } from "../assets/MenuData";
+import { MenuData } from "./MenuData";
 
 function Header () {
   const [clicked, setClicked] = useState(false);
