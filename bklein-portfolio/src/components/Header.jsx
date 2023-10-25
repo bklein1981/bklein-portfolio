@@ -18,12 +18,12 @@ function Header () {
           <i className={clicked ? "fas fa-bars" : "fas fa-rectangle-xmark"}></i>
         </div>
         <ul className={clicked ? "nav-menu" : "nav-menu active"}>
-          {MenuData.map((item, index) => {
+          {MenuData.map((menu, index) => {
             return (
               <li key={index}>
-                <a href={item.url} className={item.class}>
-                  <i className={item.icon}></i>
-                  {item.title}
+                <a href={menu.url} className={menu.class}>
+                  <i className={menu.icon}></i>
+                  {menu.title}
                 </a>
               </li>
             )
