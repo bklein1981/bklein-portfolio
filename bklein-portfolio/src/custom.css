@@ -72,11 +72,17 @@
     display: flex;
     margin: auto;
     font-size: 30pt;
+    cursor: pointer;
 }
 
 .icon-container:hover {
-    background: #dc924f;
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: #dc924f !important;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.icon-container:active {
+    background: #fff !important;
+    color: #594d52 !important;;
 }
 
 
@@ -113,7 +119,7 @@
     color: #fff;
     padding: 0.7rem 1rem;
     white-space: nowrap;
-
+    cursor: pointer;
 }
 
 .nav-links i {

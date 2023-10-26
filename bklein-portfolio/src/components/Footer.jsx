@@ -10,7 +10,7 @@ export default function Footer() {
                         {FooterData.map((footer, index) => {
                             return (
                                 <div key={index} className={`col col-lg-1 ${footer.textClass}`}>
-                                    <a href={footer.url}><i className={`${footer.icon} foot-icons`}></i></a>
+                                    <a href={footer.url} target="_blank"><i className={`${footer.icon} foot-icons`}></i></a>
                                 </div>
                             )
                         })}
