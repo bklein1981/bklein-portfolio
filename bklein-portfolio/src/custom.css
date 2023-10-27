@@ -54,6 +54,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .footer-placeholder {
@@ -82,7 +83,8 @@
 
 .icon-container:active {
     background: #fff !important;
-    color: #594d52 !important;;
+    color: #594d52 !important;
+    ;
 }
 
 
@@ -112,6 +114,7 @@
     top: 20px;
     left: 50%;
     transform: translate(-50%);
+    z-index: 1000;
 }
 
 .nav-links {
@@ -142,6 +145,10 @@
     text-align: center;
     justify-content: end;
     margin-bottom: 0px;
+}
+
+.portfolio-image {
+    max-width: 287px;
 }
 
 .submit-button {

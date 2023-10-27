@@ -1,7 +1,3 @@
-import React from "react"
-import Resume from "./Resume"
-import ContactMe from "./ContactMe"
-
 export const MenuData = [
     {
         title: 'About Me',
