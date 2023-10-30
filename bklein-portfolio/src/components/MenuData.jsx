@@ -2,7 +2,7 @@ export const MenuData = [
     {
         title: 'About Me',
         class: 'nav-links',
-        icon: 'fa-solid fa-mug-saucer'
+        icon: 'fa-solid fa-mug-saucer',
     },
     {
         title: 'Portfolio',

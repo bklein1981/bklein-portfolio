@@ -10,10 +10,10 @@ function Header () {
  
     return (
       <nav className="NavBarItems px-4">
-        <h1 className="logo" >
-          <i className="fa-solid fa-cube pe-3"></i>
+        <div className="logo" >
+          <img src="./src/assets/images/portfolio-logo.png" className="logo-icon" alt="portfolio-log" />
           <span>Brian Klein</span>
-        </h1>
+        </div>
         <div className="menu-icons" onClick={handleClick}>
           <i className={clicked ? "fas fa-bars" : "fas fa-rectangle-xmark"}></i>
         </div>

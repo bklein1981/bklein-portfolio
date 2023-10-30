@@ -1,4 +1,11 @@
 /* Class CSS */
+.icon {
+    fill: #fff;
+    margin-bottom: 0px;
+    align-items: center;
+    width: 25px;
+}
+
 .color-white {
     color: #fff
 }
@@ -84,14 +91,17 @@
 .icon-container:active {
     background: #fff !important;
     color: #594d52 !important;
-    ;
 }
 
-
+.logo-icon {
+    max-width: 57px;
+    padding: 0 0 10px 0;
+    margin-right: 10px;
+}
 .logo {
     color: #fff;
     justify-self: start;
-    cursor: pointer;
+    cursor: default;
     font-size: 3rem;
     margin-bottom: 0px;
 }
@@ -149,6 +159,7 @@
 
 .portfolio-image {
     max-width: 287px;
+    opacity: 25%;
 }
 
 .submit-button {

@@ -6,5 +6,6 @@ import Portfolio from "./Portfolio";
 export default function Card() {
   return (
     <Portfolio />
+  
   )
 }
