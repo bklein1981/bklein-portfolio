@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Fade from 'react-bootstrap/Fade';
 import Collapse from 'react-bootstrap/Collapse';
 
-
 export default function Resume() {
   const [open, setOpen] = useState(false);
 
@@ -45,15 +44,27 @@ export default function Resume() {
     color: pressed || touch ? '#594d52' : '#fff'
   }
 
+  const downloadClick = () => {
+    const pdfUrl = "./src/assets/documents/bklein2023CV.pdf"
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "bklein2023CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return (
     <>
       <div className="container-sm">
         <Fade in={open}>
           <div className="row">
             <div className="col-lg-1 col-3">
-              <div onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onTouchStart={touchDown} onTouchEnd={touchUp} className="icon-container" style={iconStyle} >
+
+              <div onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onTouchStart={touchDown} onTouchEnd={touchUp} onClick={downloadClick} className="icon-container" style={iconStyle} >
                 <i className="fa-solid fa-floppy-disk download-icon"></i>
               </div>
+
             </div>
             <div className="col-lg-11 col-9 text-end dev-heading">Development Proficiencies</div>
           </div>
