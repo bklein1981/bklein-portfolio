@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterData } from "./FooterData";
+import { FooterData } from "./Pages/Page-Data/FooterData";
 
 export default function Footer() {
     return (

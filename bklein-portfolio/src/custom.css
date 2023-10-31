@@ -1,10 +1,12 @@
 /* Class CSS */
-.icon {
-    fill: #fff;
-    margin-bottom: 0px;
-    align-items: center;
-    width: 25px;
+.about-img {
+   max-width: 525px; 
 }
+
+.about-txt {
+font-size: 20px;
+}
+
 
 .color-white {
     color: #fff
@@ -71,6 +73,13 @@
 
 .gray-background {
     background: #594d52;
+}
+
+.icon {
+    fill: #fff;
+    margin-bottom: 0px;
+    align-items: center;
+    width: 25px;
 }
 
 .icon-container {
@@ -196,6 +205,10 @@
 }
 
 @media screen and (max-width: 850px) {
+    .about-img {
+        max-width: 275px; 
+     }
+    
     .contact-right {
         margin: 1%;
     }
