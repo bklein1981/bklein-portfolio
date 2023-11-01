@@ -1,8 +1,10 @@
+import developerImage from "../assets/images/developer.png"
+
 export default function AboutMe() {
   return (
     <div className="container">
       <div className="row align-items-center">
-        <div className="col-12 col-lg-5"><img className="about-img" src="./src/assets/images/developer.png" alt="" /></div>
+        <div className="col-12 col-lg-5"><img className="about-img" src={developerImage} alt="" /></div>
         <div className="col-12 col-lg-7 text-start">
           <h2>A Little About Me</h2>
           <div  className="about-txt mt-3">
