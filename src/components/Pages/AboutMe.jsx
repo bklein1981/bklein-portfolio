@@ -1,4 +1,4 @@
-import developerImage from "./public/developer.png"
+import developerImage from '../../assets/images/developer.png';
 src/assets/images/developer.png
 export default function AboutMe() {
   return (
