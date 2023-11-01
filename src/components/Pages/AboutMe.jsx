@@ -1,5 +1,5 @@
-import developerImage from "./src/assets/images/developer.png"
-
+import developerImage from "./public/developer.png"
+src/assets/images/developer.png
 export default function AboutMe() {
   return (
     <div className="container">
