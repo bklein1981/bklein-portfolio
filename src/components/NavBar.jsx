@@ -14,9 +14,9 @@ function NavBar ({currentPage, handlePageChange}) {
           <span>Brian Klein</span>
         </div>
         <div className="menu-icons" onClick={handleClick}>
-          <i className={clicked ? "fas fa-bars" : "fas fa-rectangle-xmark"}></i>
+          <i className={!clicked ? "fas fa-bars" : "fas fa-rectangle-xmark"}></i>
         </div>
-        <ul className={clicked ? "nav-menu" : "nav-menu active"}>
+        <ul className={!clicked ? "nav-menu" : "nav-menu active"}>
           {MenuData.map((menu, index) => {        
             return (
               <li key={index}>

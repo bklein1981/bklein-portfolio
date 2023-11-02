@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Fade from 'react-bootstrap/Fade';
 import Collapse from 'react-bootstrap/Collapse';
+import pdfDoc from '../../assets/documents/bklein2023CV.pdf'
 
 export default function Resume() {
   const [open, setOpen] = useState(false);
@@ -45,7 +46,7 @@ export default function Resume() {
   }
 
   const downloadClick = () => {
-    const pdfUrl = "./src/assets/documents/bklein2023CV.pdf"
+    const pdfUrl = pdfDoc
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "bklein2023CV.pdf";
