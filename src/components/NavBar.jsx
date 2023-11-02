@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuData } from "./Pages/Page-Data/MenuData";
+import navLogo from "../assets/images/portfolio-logo.png";
 
 function NavBar ({currentPage, handlePageChange}) {
   const [clicked, setClicked] = useState(false);
@@ -10,7 +11,7 @@ function NavBar ({currentPage, handlePageChange}) {
     return (
       <nav className="NavBarItems px-4">
         <div className="logo" >
-          <img src="./src/assets/images/portfolio-logo.png" className="logo-icon" alt="portfolio-log" />
+          <img src={navLogo} className="logo-icon" alt="portfolio-log" />
           <span>Brian Klein</span>
         </div>
         <div className="menu-icons" onClick={handleClick}>
