@@ -18,11 +18,11 @@
   
   ## Usage
   The site starts a user at the About Me page, and across the top has a navigation bar which will take them to my Portfolio, a Contact Page, and a CV page. The Portfolio page allows a user to access either a site or walkthrough video of my past projects. The Contact page allows a user to send me a message, and the CV page lists both my development skills and allows a download of my most recent CV.
+
+ ![PORTFOLIO VIEW](./public/portfolio-screenshot.png)
   
   ## License
   This software is not covered under any license.
-  
-  
   
   ## How to Contribute
   N/A
