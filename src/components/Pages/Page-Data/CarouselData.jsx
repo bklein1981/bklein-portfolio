@@ -46,7 +46,7 @@ export const CarouselData = [
     imageSrc: employeeDatabaseImg,
     mainTxt: 'Employee Database',
     secondaryTxt: 'SQL',
-    url: 'https://drive.google.com/file/d/1ULor7p7alY3IUyZVCmLQVYWQavVnyXE-/view',
+    url: 'https://drive.google.com/file/d/1kqrmNIgP8wNGBfrParfQ3EGUJjzlSF-t/view',
     gitUrl: 'https://github.com/bklein1981/Employee_Database'
   },
   {
@@ -81,8 +81,8 @@ export const CarouselData = [
     imageSrc: dailyCalendarImg,
     mainTxt: 'Daily Calendar',
     secondaryTxt: 'Third Party APIs',
-    url: 'https://github.com/bklein1981/Daily-Calendar',
-    gitUrl: 'https://bklein1981.github.io/Daily-Calendar/'
+    url: 'https://bklein1981.github.io/Daily-Calendar/',
+    gitUrl: 'https://github.com/bklein1981/Daily-Calendar'
   },
   {
     imageSrc: codingQuizImg,

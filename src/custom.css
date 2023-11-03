@@ -7,7 +7,6 @@
 font-size: 20px;
 }
 
-
 .color-white {
     color: #fff
 }
@@ -35,6 +34,15 @@ font-size: 20px;
 .dev-heading {
     font-size: 35pt;
     font-weight: 500;
+}
+
+.div-text {
+    background: #594d52;
+    color: #fff;
+}
+.div-text:hover {
+    background: #ef8604;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }
 
 .download-icon {
@@ -70,6 +78,20 @@ font-size: 20px;
     height: 100px;
 }
 
+/* color settings for portfolio git icon */
+.git-div {
+background: #594d52 !important;
+cursor: pointer;
+}
+
+.git-div:hover {
+    background: #ef8604 !important;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.git-div a{
+    color: #fff;   
+}
 
 .gray-background {
     background: #594d52;
@@ -177,8 +199,8 @@ font-size: 20px;
 }
 
 .submit-button:hover {
-    background: #dc924f;
-    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: #dc924f !important;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }
 
 .white-background {

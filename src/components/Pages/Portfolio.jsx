@@ -4,22 +4,8 @@ import { CarouselData } from "./Page-Data/CarouselData";
 
 export default function Portfolio() {
   const [isMobile, setMobile] = useState((window.innerWidth <= 850))
-  const [hoverGit, setGitHover] = useState(false)
-  const [hoverUrl, setUrlHover] = useState(false)
 
-  const handleGitHover = () => {
-    setGitHover(true)
-  }
-  const handleGitUnHover = () => {
-    setGitHover(false)
-  }
 
-  const handleUrlHover = () => {
-    setUrlHover(true)
-  }
-  const handleUrlUnHover = () => {
-    setUrlHover(false)
-  }
 
   const styles = {
     carouselContainer: {
@@ -33,8 +19,8 @@ export default function Portfolio() {
       opacity: "50%"
 
     },
+
     text: {
-      background: "#ef8604",
       borderRadius: "13px",
       position: "absolute",
       top: "45%",
@@ -44,11 +30,10 @@ export default function Portfolio() {
       padding: "10px",
       fontSize: "30pt",
       fontWeight: "900",
-      color: hoverUrl ? "#594d52" : "#fff",
-      cursor: hoverUrl ? "pointer" : "default"
     },
+
     mobileText: {
-      background: "#ef8604",
+      background: "#594d52",
       position: "absolute",
       top: "0%",
       left: "50%",
@@ -56,14 +41,13 @@ export default function Portfolio() {
       zIndex: 2,
       fontSize: "15pt",
       fontWeight: "600",
-      color: hoverUrl ? "#594d52" : "#fff",
-      cursor: hoverUrl ? "pointer" : "default",
+      color: "#fff",
       maxWidth: "92%",
     },
     caption: {
       maxWidth: "91%",
       padding: "0 10px",
-      background: "#ef8604",
+      background: "#594d52",
       position: "absolute",
       top: "0%",
       color: "#fff",
@@ -75,11 +59,6 @@ export default function Portfolio() {
       position: "absolute",
       top: "75%",
       fontSize: "35pt",
-      background: "#ef8604",
-    },
-    gitA: {
-      color: hoverGit ? "#594d52" : "#fff",
-      cursor: hoverGit ? "pointer" : "default",
     },
     gitMobile: {
       textDecoration: "none",
@@ -112,7 +91,9 @@ export default function Portfolio() {
                 <div style={styles.mobileText}>
                   <div className="col">{data.mainTxt}</div>
                 </div>
-                <div className="pt-2"><a href={data.gitUrl} style={styles.gitMobile} target="_blank">GitHub Link</a></div>
+                <div className="pt-2">
+                  <a href={data.gitUrl} style={styles.gitMobile} target="_blank">GitHub Link</a>
+                </div>
               </div>
             ))}
           </div>
@@ -131,13 +112,15 @@ export default function Portfolio() {
                     <img src={data.imageSrc} style={styles.img} />
                   </div>
                   <a href={data.url} target="_blank">
-                    <div className={data.txtStyle} style={styles.text} onMouseEnter={handleUrlHover} onMouseLeave={handleUrlUnHover}>
+                    <div className="div-text" style={styles.text} >
                       {data.mainTxt}
                     </div>
                   </a>
                   <div className="row justify-content-center">
                     <div style={styles.caption}>{data.secondaryTxt}</div>
-                    <div style={styles.gitLink}><a href={data.gitUrl} target="_blank"><i className="fa-brands fa-github" style={styles.gitA} onMouseEnter={handleGitHover} onMouseLeave={handleGitUnHover}></i></a></div>
+                    <div className="git-div" style={styles.gitLink}>
+                      <a href={data.gitUrl} target="_blank"><i className="fa-brands fa-github" style={styles.gitA}> </i></a>
+                    </div>
                   </div>
                 </Carousel.Item>
               ))}

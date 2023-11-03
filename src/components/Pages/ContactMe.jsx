@@ -5,6 +5,20 @@ import Button from 'react-bootstrap/Button';
 export default function ContactMe() {
   const [validated, setValidated] = useState(false)
 
+  const [pressed, isPressed] = useState(false);
+
+  const handleMouseDown = () => {
+    isPressed(true);
+  }
+  const handleMouseUp = () => {
+    isPressed(false);
+  }
+
+  const buttonPress = {
+    background: pressed ? '#fff' : '#594d52',
+    color: pressed ? '#594d52' : '#fff'
+  }
+
   const handleSubmit = (e) => {
     const form = e.target;
 
@@ -46,16 +60,16 @@ export default function ContactMe() {
                 placeholder="Send me a message"
               />
             </Form.Group>
-            <Button className="submit-button mb-3" type="submit">Submit form</Button>
+            <Button className="submit-button mb-3" type="submit" style={buttonPress} onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} id="subButton">Submit form</Button>
           </Form>
           <p>* indicates a required field</p>
         </div>
         <div className="custom-separator order-2"><hr /></div>
         <div className="col-12 col-lg-4 order-1 order-lg-2 text-start contact-right">
           <h1>Let's Create Together</h1>
-          <p>Ready to bring your web project to life? I'm here to help you turn your vision into reality.</p>
-        </div>
-        
+          <p className="pb-2">Ready to bring your web project to life? I'm here to help you turn your vision into reality.</p>
+          <p>You may also email me at <a href="mailto:bklein1981@gmail.com">bklein1981@gmail.com</a></p>
+        </div>   
       </div>
     </div>
   )
